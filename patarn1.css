@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/roundedmplus1c.css);
+
+:root{
+    --maincolor : hsl(212, 79%, 42%);
+    --accentcolor: hsl(45, 76%, 34%);
+}
+
+body{
+    margin: 0;
+    font-family: "Rounded Mplus 1c"
+}
+
+h1{
+    font-size: 60pt
+}
+
+div.subtitle{
+    width: 100%;
+    background-color: var(--maincolor);
+    color: white;
+}
+
+h2 {
+    margin: 0;
+    font-size: 48pt;
+}
+
+p {
+    margin: 12pt 12pt;
+    font-size: 30pt;
+}
+
+div.indent{
+    /* padding-left: 36pt; */
+    display: block;
+    list-style-type: none;
+    padding-inline-start: 36pt;
+}
+
+div.indent > p.list1::before {
+    content: "-";
+    color: var(--maincolor);
+    text-indent: -12pt;
+}
+
+div.indent > p.list1 {
+    text-indent: -12pt;
+}
+
+
+p.list1{
+    display: list-item;
+}
+
+span.colored {
+    color: var(--maincolor); 
+}
+
+span.accent {
+    color: var(--accentcolor);
+}
